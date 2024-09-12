@@ -28,3 +28,5 @@ Remember to Cd into the application folder (protfolio app)
 
 #rails s -b 0.0.0.0
 (Host the rails server)
+
+CTRL+C to kill the server to return to the normal work terminal)
