@@ -19,4 +19,12 @@ docker restart <CONTAINER_NAME>
 
 docker exec -it <CONTAINER_NAME> /bin/sh
 (Goes into the docker container)
+## Image quick commands
 
+Remember to Cd into the application folder (protfolio app)
+
+#exit
+(exit the conainer)
+
+#rails s -b 0.0.0.0
+(Host the rails server)
