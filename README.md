@@ -4,3 +4,19 @@ GOAL:
 - Have a student make a profile
 - Have a login for said portfolio
 - Have a database that holds the porfolios
+
+
+## Docker Quick commands
+
+docker ps -a 
+(list all docker files that you have in that dict)
+
+docker stop <CONTAINER_NAME>
+(Stop a docker container)
+
+docker restart <CONTAINER_NAME>
+(Remote launch the container)
+
+docker exec -it <CONTAINER_NAME> /bin/sh
+(Goes into the docker container)
+
