@@ -14,6 +14,7 @@ If you did not build your enviornment, WHILE DOCKER IS OPEN...
 If you are built...
 - docker ps -a
 - docker restart <container_id_name>
+- docker exec -it <container-id> bash
 
 [laughing_bhaskara]
 
@@ -23,4 +24,14 @@ Starting the server in the container...
 While the server is running you can use the following links to navigate the webapp
 - http://localhost:3000/
 - http://localhost:3000/students
+
+# Active Storage
+Using the rails documentation from https://guides.rubyonrails.org/active_storage_overview.html
+
+Using Active Storage, an application can transform image uploads or generate image representations of non-image uploads like PDFs and videos, and extract metadata from arbitrary files.
+
+To set up the active storage...
+-# bin/rails active_storage:install
+-# bin/rails db:migrate
+
 

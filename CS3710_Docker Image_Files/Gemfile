@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby '3.2.5'
 
-
 # Core framework
 gem 'rails', '~> 7.1.0'  # Use Rails 7.1 for the latest features and security patches.
 
@@ -54,3 +53,4 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # Remember to regularly update dependencies to benefit from security patches, bug fixes, and performance improvements.
 # Use 'bundle update' to update gems while respecting the specified versions.
 
+gem "image_processing", ">= 1.2"
