@@ -4,7 +4,7 @@ class Student < ApplicationRecord
     validates :last_name, presence: true
     validates :school_email, presence: true, uniqueness: true
     validates :major, presence: true
-    validates :expected_graduation_date, presence: true    l
+    validates :expected_graduation_date, presence: true
     validate :school_email_must_end_with_student_email
     validate :correct_profile_picture_mime_type
 
