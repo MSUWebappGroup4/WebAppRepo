@@ -4492,3 +4492,15 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 304 Not Modified in 4ms (ActiveRecord: 0.0ms | Allocations: 137)
 
 
+Started GET "/students/new" for 172.17.0.1 at 2024-09-24 19:27:26 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (Duration: 68.1ms | Allocations: 4526)
+  Rendered students/new.html.erb within layouts/application (Duration: 82.1ms | Allocations: 4962)
+  Rendered layout layouts/application.html.erb (Duration: 375.1ms | Allocations: 22803)
+Completed 200 OK in 603ms (Views: 405.4ms | ActiveRecord: 83.9ms | Allocations: 40746)
+
+
