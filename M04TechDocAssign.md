@@ -31,7 +31,7 @@ Using the rails documentation from https://guides.rubyonrails.org/active_storage
 Using Active Storage, an application can transform image uploads or generate image representations of non-image uploads like PDFs and videos, and extract metadata from arbitrary files.
 
 To set up the active storage...
--# bin/rails active_storage:install
--# bin/rails db:migrate
+- #bin/rails active_storage:install
+- #bin/rails db:migrate
 
 
