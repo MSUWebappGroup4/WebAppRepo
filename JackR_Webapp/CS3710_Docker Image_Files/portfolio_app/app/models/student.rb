@@ -21,7 +21,7 @@ class Student < ApplicationRecord
     end
   
     private
-  
+
     def school_email_must_end_with_student_email
       if school_email.present? && !school_email.end_with?("@msudenver.edu")
         errors.add(:school_email, "must use an MSU Denver email.")
