@@ -4667,3 +4667,515 @@ Processing by ActiveStorage::DiskController#show as JPEG
 Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 142)
 
 
+Started GET "/" for 172.17.0.1 at 2024-10-03 18:08:10 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (7.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 671.9ms | Allocations: 25573)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 8.0ms | Allocations: 1411)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 5.0ms | Allocations: 1404)
+  Rendered students/index.html.erb within layouts/application (Duration: 1020.9ms | Allocations: 38441)
+  Rendered layout layouts/application.html.erb (Duration: 1029.4ms | Allocations: 39164)
+Completed 200 OK in 1878ms (Views: 1055.8ms | ActiveRecord: 114.3ms | Allocations: 51043)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--1e1b34afb7e01302cdb0ba31c60c9b00bca97102/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874", "filename"=>"test img"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: w4x952b6g5vobck23doypzeavt9m (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODoxMzoxMy42OTNaIiwicHVyIjoiYmxvYl9rZXkifX0=--d156cbbb319a133192d084368c6542c4d41a0511/test%20img.jpg)[0m
+  [1m[36mActiveStorage::Blob Load (8.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: wf260eg036pstfeb5py4ffwqmdwf (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzA1WiIsInB1ciI6ImJsb2Jfa2V5In19--88afeb3b7a2d044386a6042594872cd737b4b624/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODoxMzoxMy42OTNaIiwicHVyIjoiYmxvYl9rZXkifX0=--d156cbbb319a133192d084368c6542c4d41a0511/test%20img.jpg
+Completed 302 Found in 45ms (ActiveRecord: 0.4ms | Allocations: 4085)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzA1WiIsInB1ciI6ImJsb2Jfa2V5In19--88afeb3b7a2d044386a6042594872cd737b4b624/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg
+Completed 302 Found in 46ms (ActiveRecord: 12.1ms | Allocations: 4206)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzA1WiIsInB1ciI6ImJsb2Jfa2V5In19--88afeb3b7a2d044386a6042594872cd737b4b624/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODoxMzoxMy42OTNaIiwicHVyIjoiYmxvYl9rZXkifX0=--d156cbbb319a133192d084368c6542c4d41a0511/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--1e1b34afb7e01302cdb0ba31c60c9b00bca97102", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: 802sti65wt4go4op4pmitaidw88g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzU3WiIsInB1ciI6ImJsb2Jfa2V5In19--c0c0e009ca17ccad962ed2827c308a2d090f693f/7478906dfea91db0de6ff1adc0bb504e.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzU3WiIsInB1ciI6ImJsb2Jfa2V5In19--c0c0e009ca17ccad962ed2827c308a2d090f693f/7478906dfea91db0de6ff1adc0bb504e.jpg
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms | Allocations: 1215)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MTM6MTMuNzU3WiIsInB1ciI6ImJsb2Jfa2V5In19--c0c0e009ca17ccad962ed2827c308a2d090f693f/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:08:13 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Completed 200 OK in 9ms (ActiveRecord: 0.0ms | Allocations: 640)
+
+
+Completed 200 OK in 12ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 142)
+
+
+Started GET "/" for 172.17.0.1 at 2024-10-03 18:28:49 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (16.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (11.9ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 608.2ms | Allocations: 25560)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 12.8ms | Allocations: 1411)
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 8.7ms | Allocations: 1404)
+  Rendered students/index.html.erb within layouts/application (Duration: 914.5ms | Allocations: 38435)
+  Rendered layout layouts/application.html.erb (Duration: 924.2ms | Allocations: 39158)
+Completed 200 OK in 1843ms (Views: 1031.7ms | ActiveRecord: 103.3ms | Allocations: 51032)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--1e1b34afb7e01302cdb0ba31c60c9b00bca97102/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874", "filename"=>"test img"}
+  [1m[36mActiveStorage::Blob Load (1.9ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: wf260eg036pstfeb5py4ffwqmdwf (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDM2WiIsInB1ciI6ImJsb2Jfa2V5In19--fc4398fd3b82d3209258e566cdd1e696aef833c2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg)[0m
+  [1m[36mActiveStorage::Blob Load (6.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDM2WiIsInB1ciI6ImJsb2Jfa2V5In19--fc4398fd3b82d3209258e566cdd1e696aef833c2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg
+[36m  Disk Storage (0.3ms) [0m[34mGenerated URL for file at key: w4x952b6g5vobck23doypzeavt9m (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozMzo1My40NDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--2a26ed8c7cd5682cd9ab6bb66541b8f777fdf74d/test%20img.jpg)[0m
+Completed 302 Found in 45ms (ActiveRecord: 1.9ms | Allocations: 3989)
+
+
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozMzo1My40NDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--2a26ed8c7cd5682cd9ab6bb66541b8f777fdf74d/test%20img.jpg
+Completed 302 Found in 45ms (ActiveRecord: 9.4ms | Allocations: 4148)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDM2WiIsInB1ciI6ImJsb2Jfa2V5In19--fc4398fd3b82d3209258e566cdd1e696aef833c2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozMzo1My40NDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--2a26ed8c7cd5682cd9ab6bb66541b8f777fdf74d/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MywicHVyIjoiYmxvYl9pZCJ9fQ==--1e1b34afb7e01302cdb0ba31c60c9b00bca97102", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 802sti65wt4go4op4pmitaidw88g (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--78a586cd85a4ed9ea2ed6e157bcd15be7a275fe2/7478906dfea91db0de6ff1adc0bb504e.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--78a586cd85a4ed9ea2ed6e157bcd15be7a275fe2/7478906dfea91db0de6ff1adc0bb504e.jpg
+Completed 302 Found in 18ms (ActiveRecord: 0.8ms | Allocations: 1353)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--78a586cd85a4ed9ea2ed6e157bcd15be7a275fe2/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:28:53 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Completed 200 OK in 13ms (ActiveRecord: 0.0ms | Allocations: 727)
+
+
+Completed 200 OK in 10ms (ActiveRecord: 0.0ms | Allocations: 360)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 142)
+
+
+Started GET "/students/new" for 172.17.0.1 at 2024-10-03 18:29:22 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (Duration: 151.8ms | Allocations: 5146)
+  Rendered students/new.html.erb within layouts/application (Duration: 291.6ms | Allocations: 5437)
+  Rendered layout layouts/application.html.erb (Duration: 293.8ms | Allocations: 5721)
+Completed 200 OK in 340ms (Views: 297.8ms | ActiveRecord: 0.0ms | Allocations: 6070)
+
+
+Started POST "/students" for 172.17.0.1 at 2024-10-03 18:30:28 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "student"=>{"first_name"=>"A", "last_name"=>"B", "school_email"=>"C@msudenver.edu", "major"=>"CS", "expected_graduation_date"=>"2024-10-03", "profile_picture"=>#<ActionDispatch::Http::UploadedFile:0x00007fb8f0a40190 @tempfile=#<Tempfile:/tmp/RackMultipart20241003-33-zb1o4k.jpg>, @content_type="image/jpeg", @original_filename="images.jpg", @headers="Content-Disposition: form-data; name=\"student[profile_picture]\"; filename=\"images.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Student"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mStudent Exists? (4.4ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."school_email" = ? LIMIT ?[0m  [["school_email", "C@msudenver.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mStudent Create (2.5ms)[0m  [1m[32mINSERT INTO "students" ("first_name", "last_name", "school_email", "major", "expected_graduation_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["first_name", "A"], ["last_name", "B"], ["school_email", "C@msudenver.edu"], ["major", "CS"], ["expected_graduation_date", "2024-10-03"], ["created_at", "2024-10-03 18:30:29.136224"], ["updated_at", "2024-10-03 18:30:29.136224"]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "service_name", "byte_size", "checksum", "created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["key", "1gzkwqbu6cqkbk5yu4eu8ee98pzc"], ["filename", "images.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["service_name", "local"], ["byte_size", 6286], ["checksum", "ReXRQaYjr6gI2QDde/N7nQ=="], ["created_at", "2024-10-03 18:30:29.146846"]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES (?, ?, ?, ?, ?) RETURNING "id"[0m  [["name", "profile_picture"], ["record_type", "Student"], ["record_id", 9], ["blob_id", 4], ["created_at", "2024-10-03 18:30:29.149010"]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mStudent Update (0.9ms)[0m  [1m[33mUPDATE "students" SET "updated_at" = ? WHERE "students"."id" = ?[0m  [["updated_at", "2024-10-03 18:30:29.152745"], ["id", 9]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+[36m  Disk Storage (13.0ms) [0m[32mUploaded file to key: 1gzkwqbu6cqkbk5yu4eu8ee98pzc (checksum: ReXRQaYjr6gI2QDde/N7nQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: e83462b7-7416-4998-95a0-8f5006f3de43) to Async(default) with arguments: #<GlobalID:0x00007fb8dae47f88 @uri=#<URI::GID gid://name/ActiveStorage::Blob/4>>
+[ActiveJob] ↳ app/controllers/students_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/students/9
+Completed 302 Found in 586ms (ActiveRecord: 16.7ms | Allocations: 16386)
+
+
+Started GET "/students/9" for 172.17.0.1 at 2024-10-03 18:30:29 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mActiveStorage::Blob Load (2.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43] Performing ActiveStorage::AnalyzeJob (Job ID: e83462b7-7416-4998-95a0-8f5006f3de43) from Async(default) enqueued at 2024-10-03T18:30:29.637501751Z with arguments: #<GlobalID:0x00007fb8dabfadc0 @uri=#<URI::GID gid://name/ActiveStorage::Blob/4>>
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mStudent Load (1.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `set_student'
+  Rendering layout layouts/application.html.erb
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 51.6ms | Allocations: 2287)
+  Rendered students/show.html.erb within layouts/application (Duration: 118.0ms | Allocations: 3813)
+  Rendered layout layouts/application.html.erb (Duration: 125.0ms | Allocations: 4443)
+Completed 200 OK in 277ms (Views: 157.5ms | ActiveRecord: 3.9ms | Allocations: 16952)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43] [36m  Disk Storage (4.4ms) [0m[34mDownloaded file from key: 1gzkwqbu6cqkbk5yu4eu8ee98pzc[0m
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--2fd9615c5531a28c175791ffc14e3fcf0603c190/images.jpg" for 172.17.0.1 at 2024-10-03 18:30:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mActiveStorage::Blob Update (2.6ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = ? WHERE "active_storage_blobs"."id" = ?[0m  [["metadata", "{\"identified\":true,\"width\":225,\"height\":225,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ?[0m  [["blob_id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ?[0m  [["id", 9]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mStudent Update (0.1ms)[0m  [1m[33mUPDATE "students" SET "updated_at" = ? WHERE "students"."id" = ?[0m  [["updated_at", "2024-10-03 18:30:30.719145"], ["id", 9]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43]   [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [e83462b7-7416-4998-95a0-8f5006f3de43] Performed ActiveStorage::AnalyzeJob (Job ID: e83462b7-7416-4998-95a0-8f5006f3de43) from Async(default) in 967.72ms
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--2fd9615c5531a28c175791ffc14e3fcf0603c190", "filename"=>"images"}
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 1gzkwqbu6cqkbk5yu4eu8ee98pzc (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozNTozMC44OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--25fc402054e78af3a204736327648b018085af59/images.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozNTozMC44OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--25fc402054e78af3a204736327648b018085af59/images.jpg
+Completed 302 Found in 14ms (ActiveRecord: 3.0ms | Allocations: 1197)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozNTozMC44OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--25fc402054e78af3a204736327648b018085af59/images.jpg" for 172.17.0.1 at 2024-10-03 18:30:30 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"images"}
+Completed 200 OK in 11ms (ActiveRecord: 0.0ms | Allocations: 143)
+
+
+Started GET "/students" for 172.17.0.1 at 2024-10-03 18:31:05 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 9.2ms | Allocations: 1425)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 8.3ms | Allocations: 1404)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 8.0ms | Allocations: 1404)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 6.1ms | Allocations: 1451)
+  Rendered students/index.html.erb within layouts/application (Duration: 38.2ms | Allocations: 6739)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 7024)
+Completed 200 OK in 48ms (Views: 36.6ms | ActiveRecord: 5.5ms | Allocations: 7268)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozMzo1My40NDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--2a26ed8c7cd5682cd9ab6bb66541b8f777fdf74d/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:31:06 +0000
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozNTozMC44OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--25fc402054e78af3a204736327648b018085af59/images.jpg" for 172.17.0.1 at 2024-10-03 18:31:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--78a586cd85a4ed9ea2ed6e157bcd15be7a275fe2/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:31:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDM2WiIsInB1ciI6ImJsb2Jfa2V5In19--fc4398fd3b82d3209258e566cdd1e696aef833c2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:31:06 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"images"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 148)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+Completed 304 Not Modified in 5ms (ActiveRecord: 0.0ms | Allocations: 139)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Completed 304 Not Modified in 5ms (ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started GET "/students/8" for 172.17.0.1 at 2024-10-03 18:31:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `set_student'
+  Rendering layout layouts/application.html.erb
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 5.4ms | Allocations: 1419)
+  Rendered students/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1825)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2105)
+Completed 200 OK in 18ms (Views: 9.5ms | ActiveRecord: 1.1ms | Allocations: 2714)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiI4MDJzdGk2NXd0NGdvNG9wNHBtaXRhaWR3ODhnIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnNzQ3ODkwNmRmZWE5MWRiMGRlNmZmMWFkYzBiYjUwNGUuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDgzWiIsInB1ciI6ImJsb2Jfa2V5In19--78a586cd85a4ed9ea2ed6e157bcd15be7a275fe2/7478906dfea91db0de6ff1adc0bb504e.jpg" for 172.17.0.1 at 2024-10-03 18:31:36 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"7478906dfea91db0de6ff1adc0bb504e"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started DELETE "/students/8" for 172.17.0.1 at 2024-10-03 18:31:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `set_student'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 8], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+  [1m[36mStudent Destroy (0.1ms)[0m  [1m[31mDELETE FROM "students" WHERE "students"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:52:in `destroy'
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 75cba17c-981f-485c-b389-baca9dba16c5) to Async(default) with arguments: #<GlobalID:0x00007fb8dabfe538 @uri=#<URI::GID gid://name/ActiveStorage::Blob/3>>
+[ActiveJob] ↳ app/controllers/students_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/students
+Completed 303 See Other in 63ms (ActiveRecord: 7.4ms | Allocations: 6989)
+
+
+Started GET "/students" for 172.17.0.1 at 2024-10-03 18:31:37 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5] Performing ActiveStorage::PurgeJob (Job ID: 75cba17c-981f-485c-b389-baca9dba16c5) from Async(default) enqueued at 2024-10-03T18:31:37.906330915Z with arguments: #<GlobalID:0x00007fb8b80757d8 @uri=#<URI::GID gid://name/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mActiveStorage::Attachment Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = ? LIMIT ?[0m  [["blob_id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mActiveStorage::VariantRecord Load (0.1ms)[0m  [1m[34mSELECT "active_storage_variant_records".* FROM "active_storage_variant_records" WHERE "active_storage_variant_records"."blob_id" = ?[0m  [["blob_id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 3], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ?[0m  [["id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5]   [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5] [36m  Disk Storage (2.6ms) [0m[31mDeleted file from key: 802sti65wt4go4op4pmitaidw88g[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5] [36m  Disk Storage (0.4ms) [0m[31mDeleted files by key prefix: variants/802sti65wt4go4op4pmitaidw88g/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [75cba17c-981f-485c-b389-baca9dba16c5] Performed ActiveStorage::PurgeJob (Job ID: 75cba17c-981f-485c-b389-baca9dba16c5) from Async(default) in 48.34ms
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 6.2ms | Allocations: 1424)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 5.4ms | Allocations: 1404)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 6.7ms | Allocations: 1403)
+  Rendered students/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 5146)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 5431)
+Completed 200 OK in 33ms (Views: 24.0ms | ActiveRecord: 4.2ms | Allocations: 5677)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozMzo1My40NDZaIiwicHVyIjoiYmxvYl9rZXkifX0=--2a26ed8c7cd5682cd9ab6bb66541b8f777fdf74d/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:31:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6MzM6NTMuNDM2WiIsInB1ciI6ImJsb2Jfa2V5In19--fc4398fd3b82d3209258e566cdd1e696aef833c2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:31:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODozNTozMC44OTFaIiwicHVyIjoiYmxvYl9rZXkifX0=--25fc402054e78af3a204736327648b018085af59/images.jpg" for 172.17.0.1 at 2024-10-03 18:31:38 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"images"}
+Completed 304 Not Modified in 6ms (ActiveRecord: 0.0ms | Allocations: 260)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Completed 304 Not Modified in 8ms (ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Completed 304 Not Modified in 7ms (ActiveRecord: 0.0ms | Allocations: 135)
+
+
+Started GET "/students/6" for 172.17.0.1 at 2024-10-03 18:47:17 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mStudent Load (144.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `set_student'
+  Rendering layout layouts/application.html.erb
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 36.4ms | Allocations: 1476)
+  Rendered students/show.html.erb within layouts/application (Duration: 50.0ms | Allocations: 1891)
+  Rendered layout layouts/application.html.erb (Duration: 58.8ms | Allocations: 2171)
+Completed 200 OK in 254ms (Views: 62.8ms | ActiveRecord: 245.6ms | Allocations: 3015)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:47:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MSwicHVyIjoiYmxvYl9pZCJ9fQ==--7a0ed0829c5c219501628aac65b57187f2b7c874", "filename"=>"test img"}
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[36m  Disk Storage (2.0ms) [0m[34mGenerated URL for file at key: w4x952b6g5vobck23doypzeavt9m (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoxOC41OTBaIiwicHVyIjoiYmxvYl9rZXkifX0=--31d1de0cd8f1a080410e0f0ea005bfcffb990665/test%20img.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoxOC41OTBaIiwicHVyIjoiYmxvYl9rZXkifX0=--31d1de0cd8f1a080410e0f0ea005bfcffb990665/test%20img.jpg
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms | Allocations: 1213)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoxOC41OTBaIiwicHVyIjoiYmxvYl9rZXkifX0=--31d1de0cd8f1a080410e0f0ea005bfcffb990665/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:47:18 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 143)
+
+
+Started GET "/students" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (2.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 6], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 14.6ms | Allocations: 1423)
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 7], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 16.7ms | Allocations: 1404)
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 9], ["record_type", "Student"], ["name", "profile_picture"], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:27
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/students/_student.html.erb:28
+  Rendered students/_student.html.erb (Duration: 11.4ms | Allocations: 1403)
+  Rendered students/index.html.erb within layouts/application (Duration: 57.1ms | Allocations: 5169)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 5454)
+Completed 200 OK in 88ms (Views: 53.2ms | ActiveRecord: 10.0ms | Allocations: 5698)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--2fd9615c5531a28c175791ffc14e3fcf0603c190/images.jpg" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3NHg5NTJiNmc1dm9iY2syM2RveXB6ZWF2dDltIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwidGVzdCBpbWcuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcndGVzdCUyMGltZy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoxOC41OTBaIiwicHVyIjoiYmxvYl9rZXkifX0=--31d1de0cd8f1a080410e0f0ea005bfcffb990665/test%20img.jpg" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6MiwicHVyIjoiYmxvYl9pZCJ9fQ==--4979d865645c697c8474621a8b04e17dd740b26f", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: wf260eg036pstfeb5py4ffwqmdwf (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6NTI6MjMuNjQ3WiIsInB1ciI6ImJsb2Jfa2V5In19--689e02d3d24d9d872376c86c21441be56fc803d2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg)[0m
+Processing by ActiveStorage::Blobs::RedirectController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsiZGF0YSI6NCwicHVyIjoiYmxvYl9pZCJ9fQ==--2fd9615c5531a28c175791ffc14e3fcf0603c190", "filename"=>"images"}
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6NTI6MjMuNjQ3WiIsInB1ciI6ImJsb2Jfa2V5In19--689e02d3d24d9d872376c86c21441be56fc803d2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg
+Completed 302 Found in 15ms (ActiveRecord: 0.5ms | Allocations: 1682)
+
+
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.4ms) [0m[34mGenerated URL for file at key: 1gzkwqbu6cqkbk5yu4eu8ee98pzc (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoyMy42NTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--159358669fb6f964abcb0a30ce0373a21ed450ec/images.jpg)[0m
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiJ3ZjI2MGVnMDM2cHN0ZmViNXB5NGZmd3FtZHdmIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnXCI7IGZpbGVuYW1lKj1VVEYtOCcnMzYwX0ZfOTc1ODk3NjlfdDQ1Q3FYeXpqejBLWHdvQlpUOVBSYVdHSFJrNWhRcVEuanBnIiwiY29udGVudF90eXBlIjoiaW1hZ2UvanBlZyIsInNlcnZpY2VfbmFtZSI6ImxvY2FsIn0sImV4cCI6IjIwMjQtMTAtMDNUMTg6NTI6MjMuNjQ3WiIsInB1ciI6ImJsb2Jfa2V5In19--689e02d3d24d9d872376c86c21441be56fc803d2/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoyMy42NTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--159358669fb6f964abcb0a30ce0373a21ed450ec/images.jpg
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms | Allocations: 2075)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsiZGF0YSI6eyJrZXkiOiIxZ3prd3FidTZjcWtiazV5dTRldThlZTk4cHpjIiwiZGlzcG9zaXRpb24iOiJpbmxpbmU7IGZpbGVuYW1lPVwiaW1hZ2VzLmpwZ1wiOyBmaWxlbmFtZSo9VVRGLTgnJ2ltYWdlcy5qcGciLCJjb250ZW50X3R5cGUiOiJpbWFnZS9qcGVnIiwic2VydmljZV9uYW1lIjoibG9jYWwifSwiZXhwIjoiMjAyNC0xMC0wM1QxODo1MjoyMy42NTlaIiwicHVyIjoiYmxvYl9rZXkifX0=--159358669fb6f964abcb0a30ce0373a21ed450ec/images.jpg" for 172.17.0.1 at 2024-10-03 18:47:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"test img"}
+Completed 304 Not Modified in 9ms (ActiveRecord: 0.0ms | Allocations: 244)
+
+
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ"}
+Processing by ActiveStorage::DiskController#show as JPEG
+Completed 200 OK in 15ms (ActiveRecord: 0.0ms | Allocations: 455)
+
+
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"images"}
+Completed 200 OK in 8ms (ActiveRecord: 0.0ms | Allocations: 162)
+
+
