@@ -27,4 +27,12 @@ class Student < ApplicationRecord
         errors.add(:school_email, "must use an MSU Denver email.")
       end
     end
+    
+    VALID_MAJORS = ["Computer Engineering BS", "Computer Information Systems BS",
+       "Computer Science BS", "Cybersecurity Major", "Data Science and Machine Learning Major"]
+
+    validates :major, inclusion: { in: VALID_MAJORS, message: "%{value} is not a valid major" }
+
+
+
   end

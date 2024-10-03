@@ -1,5 +1,5 @@
-## Documentation
-# Running the Webapp
+# Documentation
+## Running the Webapp
 From your computer you need to make a docker image of in the CS3710_Docker Image_Files. You will need to follow the steps below to start up the app.
 - cd 'YOUR FILE PATH\CS3710_Docker Image_Files'
 
@@ -25,7 +25,7 @@ While the server is running you can use the following links to navigate the weba
 - http://localhost:3000/
 - http://localhost:3000/students
 
-# Active Storage
+## Active Storage
 Using the rails documentation from https://guides.rubyonrails.org/active_storage_overview.html
 
 Using Active Storage, an application can transform image uploads or generate image representations of non-image uploads like PDFs and videos, and extract metadata from arbitrary files.
@@ -33,5 +33,14 @@ Using Active Storage, an application can transform image uploads or generate ima
 To set up the active storage...
 -# bin/rails active_storage:install
 -# bin/rails db:migrate
+
+## Testing
+With testing 
+
+## Models
+
+## Views
+
+## Controllers
 
 
