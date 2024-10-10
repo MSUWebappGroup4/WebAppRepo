@@ -34,6 +34,15 @@ To set up the active storage...
 - #bin/rails active_storage:install
 - #bin/rails db:migrate
 
+## Scaf
+To change scaffolding and remake data scafolds you can use the following commands...
+
+-# rails generate scaffold [Name of scaffold] [NAME:DATA TYPE]
+- Generates controller for the DB, +DB table with each added variable. YOU MUST follow up with db migrate.
+-# rails destroy scaffold [Name of scaffold]
+- Destroy the scaffold that you named.
+
+
 ## Testing
 With testing 
 
