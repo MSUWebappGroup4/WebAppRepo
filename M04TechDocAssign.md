@@ -21,6 +21,9 @@ If you are built...
 Starting the server in the container...
 - #rails server -b 0.0.0.0
 
+If sever does not close got to `WebAppRepo\CS3710_Docker Image_Files\WebApp\tmp\pids` there should be a server file, in the server file there should be a number
+- kill server (Number in Server)
+
 While the server is running you can use the following links to navigate the webapp
 - http://localhost:3000/
 - http://localhost:3000/students
@@ -44,7 +47,12 @@ To change scaffolding and remake data scafolds you can use the following command
 
 
 ## Testing
-With testing 
+Behavior-driven design (BDD)
+- develop user stories (the features you wish you had) to describe how app will work user stories become acceptance tests and integration tests
+Test-driven development (TDD)
+- step definitions for new story
+TDD says: write unit & functional tests for that code first, before the code itself
+that is: write tests for the code you wish you had
 
 ## Models
 
