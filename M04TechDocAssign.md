@@ -48,11 +48,13 @@ To change scaffolding and remake data scafolds you can use the following command
 
 ## Testing
 Behavior-driven design (BDD)
-- develop user stories (the features you wish you had) to describe how app will work user stories become acceptance tests and integration tests
+- develop user stories (the features you wish you had) to describe how app will work
+- user stories become acceptance tests and integration tests
+
 Test-driven development (TDD)
 - step definitions for new story
-TDD says: write unit & functional tests for that code first, before the code itself
-that is: write tests for the code you wish you had
+- TDD says: write unit & functional tests for that code first, before the code itself
+- that is: write tests for the code you wish you had
 
 ## Models
 
