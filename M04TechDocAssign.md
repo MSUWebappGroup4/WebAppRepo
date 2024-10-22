@@ -87,6 +87,7 @@ Once that is added run
 Once that is finished run
 - rails generate devise:install
 pay attention to what it tells you once its done.
+```
   1. Ensure you have defined default url options in your environments files. Here
        is an example of default_url_options appropriate for a development environment
        in config/environments/development.rb:
@@ -106,7 +107,7 @@ pay attention to what it tells you once its done.
   4. You can copy Devise views (for customization) to your app by running:
          rails g devise:views
   From research will be doing custom views for student model below
-
+```
 First we need to go to our `config/environments/development.rb` and add... 
 `config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }`
 to the file to be able to have a defualt url. Then we will run...
@@ -115,14 +116,14 @@ to the file to be able to have a defualt url. Then we will run...
 
 ### Configs
 Now that we have it working we are able to see that they added some standard code. This is fine and shouldn't be touched for now. But need to set up email msu email verification. So we wanna add...
-
+```
    validate :email_format
    def email_format
        unless email =~ /\A[\w+\-.]+@msudenver\.edu\z/i
            errors.add(:email, "must be an @msudenver.edu email address")
        end
    end
-
+```
 to our `app/models/student.rb`
 
 Once that is done we can start to edit the views. to add the views based on what we have we need to do...
@@ -131,7 +132,7 @@ Once that is done we can start to edit the views. to add the views based on what
 Once here you should be able to go to [http://localhost:3000/students/sign_up] but this won't work yet. to have it work, you must copy the fields when creating a new student from `app/views/students/_form.html.erb` into `app/views/students/registrations/new.html.erb` so the fields will be created on registration. But to work properly you must change all `form.` to `f.`.
 
 The ApplicationController is used to define behaviors, methods, and filters that you want to apply to all controllers in your application. In order to add other parameters to the devise form you need to do the following in `app/controllers/application_controller.rb` 
-
+```
 class ApplicationController < ActionController::Base
    #configure_permitted_parameters: method runs before each Devise controller action.
    before_action :configure_permitted_parameters, if: :devise_controller?
@@ -149,21 +150,21 @@ class ApplicationController < ActionController::Base
   end
 
 end
-
+```
 BUT TO BE ABLE TO HAVE YOUR TESTS AND SCAF TO WORK YOU MUCH CHANGE THE KEYS TO MATCH YOUR SCAFS KEYS.
 
 Next to be able to configure your controllers you need to run...
 - rails generate devise:controllers students
 
 Need to update the `config/routes.rb` to find student/registrations form 
-
+```
 Rails.application.routes.draw do
  devise_for :students, controllers: {
  registrations: 'students/registrations',
  sessions: 'students/sessions',
  passwords: 'students/passwords'
 }
-
+```
 
 
 
